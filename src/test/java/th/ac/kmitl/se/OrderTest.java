@@ -1,15 +1,13 @@
 package th.ac.kmitl.se;
 
+import org.graphwalker.java.test.*;
+import org.graphwalker.core.machine.Context;
+import org.graphwalker.core.condition.*;
+import org.graphwalker.core.generator.*;
+import org.graphwalker.websocket.WebSocketServer;
 import org.junit.jupiter.api.*;
-import static org.junit.jupiter.api.Assertions.*;
-import org.mockito.*;
-import static org.mockito.Mockito.*;
 
 class OrderTest {
-    OrderDB orderDB;
-    ProductDB productDB;
-    PaymentService paymentService;
-    ShippingService shippingService;
 
     @BeforeEach
     void setUp() {
@@ -17,43 +15,23 @@ class OrderTest {
     }
 
     @Test
-    void testPlacingOrder() {
+    public void testMBT() throws java.io.IOException {
+        TestExecutor executor = new TestExecutor(OrderAdapter.class);
+        Context context = executor.getMachine().getCurrentContext();
+        context.setPathGenerator(new RandomPath(new EdgeCoverage(50)));
 
-    }
+        /* Uncomment the following three lines to enable GraphWalker player */
+        //OrderAdapter.delay = 500;
+        //WebSocketServer server = new WebSocketServer(8887, executor.getMachine());
+        //server.start();
 
-    @Test
-    void testCancelingUnpaidOrder() {
-
-    }
-
-    @Test
-    void testPaymentSuccess() {
-
-    }
-
-    @Test
-    void testPaymentError() {
-
-    }
-
-    @Test
-    void testPaymentRetrySuccess() {
-
-    }
-
-    @Test
-    void testShippingOrder() {
-
-    }
-
-    @Test
-    void testCancelingPaidOrderSuccess() {
-
-    }
-
-    @Test
-    void testCancelingPaidOrderError() {
-
+        Result result = executor.execute(true);
+        if (result.hasErrors()) {
+            for (String error : result.getErrors()) {
+                System.out.println(error);
+            }
+        }
+        System.out.println("Done: [" + result.getResults().toString(2) + "]");
     }
 
 }
