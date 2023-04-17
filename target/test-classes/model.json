@@ -1,0 +1,180 @@
+{
+    "models": [
+        {
+            "edges": [
+                {
+                    "id": "461281f0-c5g6-11ed-8461-59b8eda52629",
+                    "name": "place",
+                    "sourceVertexId": "47e7a0f0-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "49101b60-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "65888240-cd56-11ed-8461-59b8eda52629",
+                    "name": "pay",
+                    "sourceVertexId": "49101b60-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "67a00d10-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "7572e920-cd56-11ed-8461-59b8eda52629",
+                    "name": "paySuccess",
+                    "sourceVertexId": "67a00d10-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "669c31a0-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "7a891880-cd56-11ed-8461-59b8eda52629",
+                    "name": "ship",
+                    "sourceVertexId": "669c31a0-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "141140f0-cd56-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "831bc470-cd56-11ed-8461-59b8eda52629",
+                    "name": "cancel",
+                    "sourceVertexId": "49101b60-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "66237f30-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "8eb288a0-cd56-11ed-8461-59b8eda52629",
+                    "name": "payError",
+                    "sourceVertexId": "67a00d10-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "99297a60-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "90420240-cd56-11ed-8461-59b8eda52629",
+                    "name": "retryPay",
+                    "sourceVertexId": "99297a60-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "67a00d10-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "930d0920-cd56-11ed-8461-59b8eda52629",
+                    "name": "cancel",
+                    "sourceVertexId": "669c31a0-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "66ef0c90-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "93e037a0-cd56-11ed-8461-59b8eda52629",
+                    "name": "refundError",
+                    "sourceVertexId": "66ef0c90-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "9aaf08f0-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "99bdfcc0-cd56-11ed-8461-59b8eda52629",
+                    "name": "refundSuccess",
+                    "sourceVertexId": "66ef0c90-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "655559c0-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "a2c2cb70-cd56-11ed-8461-59b8eda52629",
+                    "name": "reset",
+                    "sourceVertexId": "9aaf08f0-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "47e7a0f0-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "a642ca70-cd56-11ed-8461-59b8eda52629",
+                    "name": "reset",
+                    "sourceVertexId": "66237f30-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "47e7a0f0-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "adb18fd0-cd56-11ed-8461-59b8eda52629",
+                    "name": "reset",
+                    "sourceVertexId": "655559c0-cd55-11ed-8461-59b8eda52629",
+                    "targetVertexId": "47e7a0f0-cd55-11ed-8461-59b8eda52629"
+                },
+                {
+                    "id": "b316f0a0-cd56-11ed-8461-59b8eda52629",
+                    "name": "reset",
+                    "sourceVertexId": "141140f0-cd56-11ed-8461-59b8eda52629",
+                    "targetVertexId": "47e7a0f0-cd55-11ed-8461-59b8eda52629"
+                }
+            ],
+            "generator": "random(edge_coverage(100))",
+            "id": "4540c3e0-cd55-11ed-8461-59b8eda52629",
+            "name": "Creamder",
+            "startElementId": "47e7a0f0-cd55-11ed-8461-59b8eda52629",
+            "vertices": [
+                {
+                    "id": "47e7a0f0-cd55-11ed-8461-59b8eda52629",
+                    "name": "CREATE",
+                    "properties": {
+                        "x": 588.0637654752957,
+                        "y": -120.05441153998545
+                    }
+                },
+                {
+                    "id": "49101b60-cd55-11ed-8461-59b8eda52629",
+                    "name": "PLACE",
+                    "properties": {
+                        "x": 388.30998183078526,
+                        "y": 97.70344840502679
+                    }
+                },
+                {
+                    "id": "655559c0-cd55-11ed-8461-59b8eda52629",
+                    "name": "REFUNDED",
+                    "properties": {
+                        "x": 1038.6518205459047,
+                        "y": 224.6495083729174
+                    }
+                },
+                {
+                    "id": "66237f30-cd55-11ed-8461-59b8eda52629",
+                    "name": "CANCELED",
+                    "properties": {
+                        "x": 409.97553341679304,
+                        "y": 473.45559639881037
+                    }
+                },
+                {
+                    "id": "669c31a0-cd55-11ed-8461-59b8eda52629",
+                    "name": "PAID",
+                    "properties": {
+                        "x": 917.4894432520028,
+                        "y": 84.56736249232799
+                    }
+                },
+                {
+                    "id": "66ef0c90-cd55-11ed-8461-59b8eda52629",
+                    "name": "AWAIT_REFUND",
+                    "properties": {
+                        "x": 923.9864072740156,
+                        "y": 355.62377093229355
+                    }
+                },
+                {
+                    "id": "67a00d10-cd55-11ed-8461-59b8eda52629",
+                    "name": "PAYMENT_CHECK",
+                    "properties": {
+                        "x": 646.8733212205235,
+                        "y": 87.40980013863766
+                    }
+                },
+                {
+                    "id": "99297a60-cd55-11ed-8461-59b8eda52629",
+                    "name": "PAYMENT_ERROR",
+                    "properties": {
+                        "x": 632,
+                        "y": 482.00000000000006
+                    }
+                },
+                {
+                    "id": "9aaf08f0-cd55-11ed-8461-59b8eda52629",
+                    "name": "REFUND_ERROR",
+                    "properties": {
+                        "x": 833,
+                        "y": 484.00000000000006
+                    }
+                },
+                {
+                    "id": "141140f0-cd56-11ed-8461-59b8eda52629",
+                    "name": "SHIPPED",
+                    "properties": {
+                        "x": 914.4525749493072,
+                        "y": -95.88071932550349
+                    }
+                }
+            ]
+        }
+    ],
+    "selectedModelIndex": 0,
+    "selectedElementId": "47e7a0f0-cd55-11ed-8461-59b8eda52629"
+}
